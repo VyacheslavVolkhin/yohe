@@ -20,7 +20,11 @@ $(document).ready(function(){
 	  return this;
 	};
 
-	//popup block
+    //swipebox
+    $('[data-swipebox]').swipebox();
+    
+	
+    //popup block
 	$('.js-popup-wrap .js-btn-toggle').on('click', function() {
 		if ($(this).hasClass('active')) {
 			$(this).removeClass('active');
@@ -100,6 +104,22 @@ $(document).ready(function(){
 			$(this).addClass('active').next('.js-tab-content').slideDown(200);
 		}
 	})
+
+
+    //main-slider-box
+    if (!!$('.main-slider-box').offset()) {
+        $('.main-slider-box .slider').slick({
+            dots: false,
+            slidesToShow: 1,
+            variableWidth: false,
+            infinite: true,
+            adaptiveHeight: false,
+            rows: 1,
+            swipeToSlide: true,
+            prevArrow: '<span class="btn btn-action-ico ico-arrow ico-arrow-prev"></span>',
+            nextArrow: '<span class="btn btn-action-ico ico-arrow ico-arrow-next"></span>',
+        });
+    }
 	
 });
 

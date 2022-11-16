@@ -9,8 +9,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./css/swipebox.min.css" />
     <link rel="stylesheet" href="./css/slick.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
 </head>
@@ -23,32 +26,505 @@
         <!-- header -->
         <header class="header">
             <div class="inner-wrap">
-                44444
+                <div class="logo-wrap">
+                    <a href="" class="logo">
+                        <img src="./img/main/logo.svg" alt="">
+                        <span class="logo-title">(beta)</span>
+                    </a>
+                </div>
             </div>
         </header>
         <!-- /header -->
 
-        <!-- page -->
-        <div class="page">
-            2222
+        <!--main-form-box-->
+        <div class="main-form-box cnt-section">
+            <div class="inner-wrap">
+                <div class="info-outer-wrap">
+                    <h1 class="h1-title">Improve your product&nbsp;—&nbsp;ask&nbsp;your Customers</h1>
+                    <div class="title-text-wrap">
+                        <p>Collect, sort and analyze feedback from your&nbsp;customers&nbsp;in&nbsp;one platform</p>
+                    </div>
+                </div>
+                <div class="form-outer-wrap">
+                    <div class="h3-title">Become a test user</div>
+                    <form action="/" class="form-wrap">
+                        <div class="frm-row-wrap">
+                            <div class="frm-row">
+                                <div class="frm-field">
+                                    <input type="text" class="form-input" placeholder="First Name">
+                                </div>
+                                <div class="frm-field">
+                                    <input type="email" class="form-input" placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row-submit">
+                            <div class="frm-field">
+                                <button type="submit" class="btn">Request early access</button>
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <div class="frm-info">
+                                    <div class="info-title">We will consider every application, but unfortunately we can't handle all of them due to certain limitations. The beta-testing is <span class="text-att">free until 28.12.2022</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <!-- /page -->
+        <!--/main-form-box-->
+
+        <!--main-select-box-->
+        <div class="main-select-box cnt-section">
+            <div class="inner-wrap">
+                <div class="items-wrap">
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-select tile01 active">
+                            <div class="tile-ico">
+                                <div class="tile-ico-title">?</div>
+                                <div class="tile-ico-smile">
+                                    <img src="./img/icons/smile01.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="tile-photo">
+                                <img src="./img/01.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-select tile02">
+                            <div class="tile-ico">
+                                <div class="tile-ico-title">?</div>
+                                <div class="tile-ico-smile">
+                                    <img src="./img/icons/smile02.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="tile-photo">
+                                <img src="./img/02.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-select tile03">
+                            <div class="tile-ico">
+                                <div class="tile-ico-title">?</div>
+                                <div class="tile-ico-smile">
+                                    <img src="./img/icons/smile03.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="tile-photo">
+                                <img src="./img/03.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-select tile04">
+                            <div class="tile-ico">
+                                <div class="tile-ico-title">?</div>
+                                <div class="tile-ico-smile">
+                                    <img src="./img/icons/smile04.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="tile-photo">
+                                <img src="./img/04.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-select tile05">
+                            <div class="tile-ico">
+                                <div class="tile-ico-title">?</div>
+                                <div class="tile-ico-smile">
+                                    <img src="./img/icons/smile05.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="tile-photo">
+                                <img src="./img/05.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+            </div>
+        </div>
+        <!--/main-select-box-->
+
+        <!--main-logos-box-->
+        <div class="main-logos-box cnt-section">
+            <div class="inner-wrap">
+                <div class="title-outer-wrap">
+                    <h2 class="h2-title">Companies that have already tried Yohe.io</h2>
+                </div>
+                <div class="items-outer-wrap">
+                    <div class="items-wrap">
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-tile-logo">
+                                <img src="./img/logo01.svg" alt="">
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-tile-logo">
+                                <img src="./img/logo02.svg" alt="">
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-tile-logo">
+                                <img src="./img/logo03.svg" alt="">
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-tile-logo">
+                                <img src="./img/logo04.svg" alt="">
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-tile-logo">
+                                <img src="./img/logo05.svg" alt="">
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-tile-logo">
+                                <img src="./img/logo06.svg" alt="">
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/main-logos-box-->
+
+        <!--main-info-box-->
+        <div class="main-info-box cnt-section">
+            <div class="inner-wrap">
+                <div class="title-outer-wrap">
+                    <h2 class="h1-title">Once we asked ourselves: what kind&nbsp;of&nbsp;a&nbsp;product will let us work with feedback in&nbsp;the&nbsp;best way?</h2>
+                    <div class="title-text-wrap">
+                        <p>We realized that it has to be able to collect, sort and analyze feedback (as&nbsp;well as loyalty metrics).</p>
+                    </div>
+                    <h2 class="h2-title">We also added the Customer Success team to our product (analytics and sociologists) who are helping users at every stage. And finally we got a platform we fell in love with.</h2>
+                </div>
+            </div>
+        </div>
+        <!--/main-info-box-->
+
+        <!--main-slider-box-->
+        <div class="main-slider-box cnt-section">
+            <div class="inner-wrap">
+                <div class="title-outer-wrap">
+                    <h2 class="h1-title">Things our platform can do</h2>
+                </div>
+                <div class="tabs-box tabs-outer-wrap js-tabs-nav">
+                    <ul class="menu">
+                        <li><a href="" class="btn-tab active" data-tab="slider01-01"><span>1.</span> Collect</a></li>
+                        <li><a href="" class="btn-tab" data-tab="slider01-02"><span>2.</span> Sort</a></li>
+                        <li><a href="" class="btn-tab" data-tab="slider01-03"><span>3.</span> Analyze</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slider-outer-wrap js-tab-block" data-tab="slider01-01">
+                <div class="slider-wrap">
+                    <div class="slider">
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="item-tile-photo tile-photo photo-cover">
+                                <img src="./img/slider01-01.jpg" alt="">
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="item-tile-photo tile-photo photo-cover">
+                                <img src="./img/slider01-02.jpg" alt="">
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="item-tile-photo tile-photo photo-cover">
+                                <img src="./img/slider01-03.jpg" alt="">
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="item-tile-photo tile-photo photo-cover">
+                                <img src="./img/slider01-04.jpg" alt="">
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="item-tile-photo tile-photo photo-cover">
+                                <img src="./img/slider01-05.jpg" alt="">
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="item-tile-photo tile-photo photo-cover">
+                                <img src="./img/slider01-06.jpg" alt="">
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                    </div>
+                </div>
+            </div>
+            <div class="slider-outer-wrap js-tab-block" data-tab="slider01-02">
+                <div class="slider-wrap">
+                    <div class="slider">
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="item-tile-photo tile-photo photo-cover">
+                                <img src="./img/slider02-01.jpg" alt="">
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                    </div>
+                </div>
+            </div>
+            <div class="slider-outer-wrap js-tab-block" data-tab="slider01-03">
+                <div class="slider-wrap">
+                    <div class="slider">
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="item-tile-photo tile-photo photo-cover">
+                                <img src="./img/slider03-01.jpg" alt="">
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="item-tile-photo tile-photo photo-cover">
+                                <img src="./img/slider03-02.jpg" alt="">
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="item-tile-photo tile-photo photo-cover">
+                                <img src="./img/slider03-03.jpg" alt="">
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="item-tile-photo tile-photo photo-cover">
+                                <img src="./img/slider03-04.jpg" alt="">
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/main-slider-box-->
+
+        <!--main-slider-box-->
+        <div class="main-slider-box cnt-section">
+            <div class="inner-wrap">
+                <div class="title-outer-wrap">
+                    <h2 class="h1-title">The role of Customer Success</h2>
+                </div>
+            </div>
+            <div class="slider-outer-wrap">
+                <div class="slider-wrap">
+                    <div class="slider">
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="sl-info"><span class="text-att">01.</span> We'll help you choose the best targeting to ask the right questions and avoid negative reactions</div>
+                            <div class="item-tile-photo tile-photo photo-cover">
+                                <img src="./img/slider04-01.jpg" alt="">
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="sl-info"><span class="text-att">01.</span> We'll help you choose the best targeting to ask the right questions and avoid negative reactions</div>
+                            <div class="item-tile-photo tile-photo photo-cover">
+                                <img src="./img/slider04-02.jpg" alt="">
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="sl-info"><span class="text-att">01.</span> We'll help you choose the best targeting to ask the right questions and avoid negative reactions</div>
+                            <div class="item-tile-photo tile-photo photo-cover">
+                                <img src="./img/slider04-03.jpg" alt="">
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="sl-info"><span class="text-att">01.</span> We'll help you choose the best targeting to ask the right questions and avoid negative reactions</div>
+                            <div class="item-tile-photo tile-photo photo-cover">
+                                <img src="./img/slider04-04.jpg" alt="">
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/main-slider-box-->
+
+        <!--main-tiles-box-->
+        <div class="main-tiles-box cnt-section">
+            <div class="inner-wrap">
+                <div class="title-outer-wrap">
+                    <h2 class="h1-title">What is the difference between&nbsp;us&nbsp;and&nbsp;the thers?</h2>
+                </div>
+                <div class="items-wrap">
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-main">
+                            <div class="tile-ico">
+                                <img src="./img/icons/01.svg" alt="">
+                            </div>
+                            <div class="tile-text">We want you to test all the product tools and get answers to all your questions. So we came up with the pilot project system. Together with our team you can work on your goals <span class="text-att">for free</span>.</div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-main">
+                            <div class="tile-ico">
+                                <img src="./img/icons/02.svg" alt="">
+                            </div>
+                            <div class="tile-text">Our team will help you to find the right questions depending on your goals and find the best solutions.</div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-main">
+                            <div class="tile-ico">
+                                <img src="./img/icons/03.svg" alt="">
+                            </div>
+                            <div class="tile-text">There is no need for developers anymore when you want to ask your users in the certain points of Customer Journey. More than 100 targeting combinations will help you with that.</div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-main">
+                            <div class="tile-ico">
+                                <img src="./img/icons/04.svg" alt="">
+                            </div>
+                            <div class="tile-text">Special tools will help you process text comments and sort them into categories. This way you'll organize user feedback and understand which problems you have to work on.</div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+            </div>
+        </div>
+        <!--/main-tiles-box-->
+
+        <!--main-steps-box-->
+        <div class="main-steps-box cnt-section">
+            <div class="inner-wrap">
+                <div class="title-outer-wrap">
+                    <h2 class="h1-title">What are the steps to start a pilot project?</h2>
+                </div>
+                <div class="items-outer-wrap">
+                    <div class="items-wrap">
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-tile-step">
+                                <div class="tile-number">01.</div>
+                                <div class="tile-title">Apply for beta-testing</div>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-tile-step">
+                                <div class="tile-number">02.</div>
+                                <div class="tile-title">Get the platform code</div>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-tile-step">
+                                <div class="tile-number">03.</div>
+                                <div class="tile-title">Get the confirmation</div>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-tile-step">
+                                <div class="tile-number">04.</div>
+                                <div class="tile-title">Tell us about your goals and start a&nbsp;pilot project with <a href="" class="text-att">YoHe</a></div>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/main-steps-box-->
 
 
         <!-- footer -->
         <footer class="footer">
             <div class="inner-wrap">
-                333333
+                <div class="footer-main-panel">
+                    <div class="logo-wrap">
+                        <a href="" class="logo">
+                            <img src="./img/main/logo-stars.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="info-wrap">
+                        <div class="h2-title">GDPR</div>
+                        <p>We care about end-user privacy.</p>
+                    </div>
+                    <div class="action-wrap">
+                        <a href="" class="btn button-border button-light button-small">
+                            <span class="button-title">Learn More</span>
+                            <span class="button-ico">
+                                <img src="./img/icons/arrow-more.svg" alt="">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-link-panel">
+                    <a href="">yohe.io</a>
+                </div>
             </div>
         </footer>
         <!-- /footer -->
+
 
     </div>
     <!-- /wrap -->
 
     <script src="./js/jquery.min.js"></script>
-    <script src="./js/jquery.fancybox.min.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.swipebox.min.js"></script>
     <script src="./js/jquery.maskedinput.min.js"></script>
     <script src="./js/scripts.js"></script>
 
