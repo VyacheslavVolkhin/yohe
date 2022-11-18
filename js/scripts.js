@@ -119,7 +119,25 @@ $(document).ready(function(){
             prevArrow: '<span class="btn btn-action-ico ico-arrow ico-arrow-prev"></span>',
             nextArrow: '<span class="btn btn-action-ico ico-arrow ico-arrow-next"></span>',
         });
+        let curTab = $('.main-slider-box.slider-tabs .slick-slide.slick-active').find('.sl-wrap').attr('data-slider');
+        $('.main-slider-box.slider-tabs .tabs-box .active').removeClass('active');
+        $('.main-slider-box.slider-tabs .tabs-box [data-slider="'+curTab+'"]').addClass('active');
+        $('.main-slider-box.slider-tabs .slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+            let curTab = $('.main-slider-box.slider-tabs .slick-slide.slick-active').find('.sl-wrap').attr('data-slider');
+            $('.main-slider-box.slider-tabs .tabs-box .active').removeClass('active');
+            $('.main-slider-box.slider-tabs .tabs-box [data-slider="'+curTab+'"]').addClass('active');
+        })
+        $('.main-slider-box.slider-tabs .tabs-box a').on('click', function() {
+            if ($(this).hasClass('active')) {} else {
+                let newTab = $(this).attr('data-slider');
+                let newTabIndex = $('.main-slider-box.slider-tabs').find('.sl-wrap.sl-first[data-slider="'+newTab+'"]').parents('.slick-slide').index() - 1;
+                console.log(newTabIndex)
+                $('.main-slider-box.slider-tabs .slider').slick('slickGoTo', newTabIndex);
+            }
+            return false;
+        })
     }
+    
 	
 });
 

@@ -482,9 +482,6 @@ body {
   transition: opacity ease 0.2s;
   opacity: 0.5;
 }
-.item-tile-select:hover {
-  opacity: 1;
-}
 .item-tile-select.tile02 .tile-ico {
   -webkit-transform: translateX(25%);
           transform: translateX(25%);
@@ -501,13 +498,16 @@ body {
   -webkit-transform: translateX(-30%);
           transform: translateX(-30%);
 }
-.item-tile-select.active {
+.item-tile-select.active,
+.item-tile-select:hover {
   opacity: 1;
 }
-.item-tile-select.active .tile-ico-title {
+.item-tile-select.active .tile-ico-title,
+.item-tile-select:hover .tile-ico-title {
   opacity: 0;
 }
-.item-tile-select.active .tile-ico-smile {
+.item-tile-select.active .tile-ico-smile,
+.item-tile-select:hover .tile-ico-smile {
   opacity: 1;
 }
 .item-tile-select .tile-photo {
@@ -990,9 +990,6 @@ body {
   .main-tiles-box .title-outer-wrap {
     text-align: center;
   }
-  .main-tiles-box .item-wrap {
-    width: 50%;
-  }
   .main-slider-box .title-outer-wrap {
     text-align: center;
   }
@@ -1329,9 +1326,6 @@ select::-ms-expand {
   padding-top: 7px;
   padding-bottom: 7px;
   border-radius: 2px;
-}
-.btn.button-small .button-title {
-  text-decoration: underline;
 }
 .btn.button-border:not(:hover) {
   background-color: transparent;
